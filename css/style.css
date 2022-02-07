@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  width: 100%;
+  height: 800px;
+  background-image:url(../pics/tiendat-nguyen-fatSNgKho70-unsplash.jpg);
+  background-size: cover;
+}
+
+aside div {
+  margin-top: 100px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex: row;
+}
+
+aside div:before {
+content: "";
+  position: absolute;
+    background-color: black;
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+aside div .icon {
+  background-image: url(../pics/flutter_dash_black_24dp.svg);
+  background-size: 10%;
+}
+
