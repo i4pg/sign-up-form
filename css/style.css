@@ -25,7 +25,7 @@ body {
 }
 
 aside {
-  width: 80%;
+  width: 30%;
   height: 100vh;
   background-image: url(../pics/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
@@ -83,10 +83,11 @@ legend {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 290px;
+  width: 800px;
   background-color: white;
-  box-shadow: 0 0 5px gray;
+  box-shadow: 0 0 10px lightgray;
 }
 
 .second form fieldset legend {
@@ -137,15 +138,16 @@ legend {
   box-shadow: 0 0 5px #719ece;
 }
 
-.pass {
+.error {
   position: relative;
 }
 
-.pass::before {
+.error input:invalid + span:after {
   content: "* Passwords do not match";
   position: absolute;
   color: red;
-  top: 47px;
+  top: 35px;
+  left: 0;
   font-size: 0.7rem;
   font-family: "Roboto-Medium", sans-serif;
   text-transform: none;
@@ -174,4 +176,5 @@ legend {
   color: #596d48;
   font-family: "Roboto-Medium", sans-serif;
   font-weight: bolder;
+  text-decoration: none;
 }
