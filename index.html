@@ -5,49 +5,53 @@
   <title>Sign up form</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <aside>
     <div>
-      <div class="icon"></div>
-      <p>ICBA</p>
+      <img src="pics/odin-lined.png" alt="logo">
+      <p>ODIN</p>
     </div>
   </aside>
-  <section>
-    <p>This not a real online service! You know you need something like this in your life to help you realize your
-      deepest dreams.</p>
-    <p>Sign up now to get started.</p>
-    <p>You know you want to.</p>
-    <form>
-      <fieldset>
-        <legend>Let's to this!</legend>
+  <main>
+    <section class="first">
+      <h2>This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams.</h2>
+      <h2>Sign up <i>now</i> to get started.</h2>
+      <h2>You know you want to.</h2>
+    </section>
+    <section class="second">
+      <form action="#">
+        <fieldset>
+          <legend>Let's to this!</legend>
 
-        <label for="fname">first name</label>
-        <input type="text" name="fname" value="mohammed">
+          <label for="fname">first name</label>
+          <input type="text" name="fname">
 
-        <label for="lname">last name</label>
-        <input type="text" name="lname" value="tariq">
+          <label for="mail">E-mail</label>
+          <input type="email" name="mail">
 
-        <label for="mail">E-mail</label>
-        <input type="email" name="mail" value="">
+          <label class="pass" for="pass">Password</label>
+          <input type="password" name="pass" required>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" value="123456789">
+          <label for="lname">last name</label>
+          <input type="text" name="lname">
 
-        <label for="pass">Password</label>
-        <input type="password" name="pass" required>
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone">
 
-        <label for="pass">confirm Password</label>
-        <input type="password" name="pass" required>
+          <label for="pass_confirm">confirm Password</label>
+          <input type="password" name="pass_confirm" required>
 
+        </fieldset>
         <button type="submit">create acoount</button>
-      </fieldset>
-    </form>
-    <p>Already have an account? <span class="log">Log in</span></p>
-  </section>
+      </form>
+      <p>Already have an account? <a>Log in</a></p>
+    </section>
+  </main>
 </body>
 
 </html>

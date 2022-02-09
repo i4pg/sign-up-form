@@ -1,12 +1,34 @@
+* {
+  margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Norse-Bold";
+  src:url(../fonts/Norse-Bold.otf) 
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
 body {
   display: flex;
   flex-direction: row;
+  background-color: #EEE;
 }
 
 aside {
-  width: 100%;
-  height: 800px;
-  background-image:url(../pics/tiendat-nguyen-fatSNgKho70-unsplash.jpg);
+  width: 80%;
+  height: 100vh;
+  background-image:url(../pics/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
 }
 
@@ -14,8 +36,10 @@ aside div {
   margin-top: 100px;
   height: 200px;
   position: relative;
+  color: white;
   display: flex;
-  flex: row;
+  justify-content: center;
+  align-items: center;
 }
 
 aside div:before {
@@ -27,8 +51,131 @@ content: "";
     height: 100%;
 }
 
-aside div .icon {
-  background-image: url(../pics/flutter_dash_black_24dp.svg);
-  background-size: 10%;
+aside div img {
+  width: 130px;
+  z-index: 1;
 }
 
+aside div p {
+  font-family: "Norse-Bold", sans-serif;
+  font-size: 5rem;
+    z-index: 1;
+}
+
+.first {
+  margin: 150px 100px 0 50px;
+}
+
+.first h2, legend{
+  font-family: 'Roboto-Medium', sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.first h2:last-of-type {
+  margin: 30px 0 80px 0;
+}
+
+.second form fieldset {
+  border: none;
+  padding: 0;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 290px;
+  background-color: white;
+  box-shadow: 0 0 5px  gray;
+}
+
+.second form fieldset legend {
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+
+.second form fieldset input, .second fieldset label {
+  width: 40%;
+}
+
+.second form fieldset label {
+  font-size: 0.7rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+  opacity: 80%;
+}
+
+.second form fieldset input {
+  margin-top: 1.1px;
+  margin-bottom: 20px;
+  width: 250px;
+  background-color: #EEE;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+}
+
+.second form fieldset input:focus{
+      border: 1px solid cornflowerblue;
+    outline: none;
+    box-shadow: 0 0 5px #596D48;
+}
+
+.second form fieldset input[type="password"]:valid
+{
+      border: 1px solid #596D48;
+    outline: none;
+    box-shadow: 0 0 5px #719ECE;
+  }
+
+.second form fieldset input[type="password"]:invalid
+{
+      border: 1px solid red;
+    outline: none;
+    box-shadow: 0 0 5px #719ECE;
+}
+
+.pass {
+    position: relative;
+}
+
+.pass::before
+ {
+  content: "* Passwords do not match"; 
+  position: absolute;
+  color: red;
+  top: 47px;
+  font-size: 0.7rem;
+  font-family: 'Roboto-Medium', sans-serif;
+  text-transform: none;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0;
+}
+
+
+
+.second form button {
+  margin: 30px 50px;
+    padding: 15px 50px;
+    background-color: #596D48;
+    font-family: Roboto, sans-serif;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.second p {
+  margin: 10px 50px;
+    font-family: Roboto, sans-serif;
+}
+
+.second p a {
+  color: #596D48;
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: bolder;
+}
