@@ -96,6 +96,7 @@ legend {
 .second form fieldset label {
   width: fit-content;
 }
+
 .second form fieldset input {
   width: 40%;
 }
