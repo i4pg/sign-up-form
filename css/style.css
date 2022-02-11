@@ -83,9 +83,7 @@ legend {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   height: 290px;
-  width: 800px;
   background-color: white;
   box-shadow: 0 0 10px lightgray;
 }
@@ -95,8 +93,10 @@ legend {
   padding-top: 50px;
 }
 
-.second form fieldset input,
-.second fieldset label {
+.second form fieldset label {
+  width: fit-content;
+}
+.second form fieldset input {
   width: 40%;
 }
 
