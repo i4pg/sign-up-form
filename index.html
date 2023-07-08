@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sign up form</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <aside>
-      <div>
-        <img src="pics/odin-lined.png" alt="logo" />
-        <p>ODIN</p>
-      </div>
-    </aside>
-    <main>
-      <section class="first">
-        <h2>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams.
-        </h2>
-        <h2>Sign up <i>now</i> to get started.</h2>
-        <h2>You <i>know</i> you want to.</h2>
-      </section>
-      <section class="second">
-        <form action="#">
-          <fieldset>
-            <legend>Let's to this!</legend>
+<head>
+  <title>Sign up form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
-            <label for="fname">first name</label>
-            <input type="text" name="fname" />
+<body>
+  <aside>
+    <div>
+      <img src="pics/odin-lined.png" alt="logo" />
+      <p>ODIN</p>
+    </div>
+  </aside>
+  <main>
+    <section class="first">
+      <h2>
+        This is not a real online service! You know you need something like
+        this in your life to help you realize your deepest dreams.
+      </h2>
+      <h2>Sign up <i>now</i> to get started.</h2>
+      <h2>You <i>know</i> you want to.</h2>
+    </section>
+    <section class="second">
+      <form action="#">
+        <fieldset>
+          <legend>Let's to this!</legend>
 
-            <label for="mail">E-mail</label>
-            <input type="email" name="mail" />
+          <label for="fname">first name</label>
+          <input type="text" name="fname" />
 
-              <label for="pass">Password</label>
-              <div class="error">
-                
-              <input  type="password" name="pass" required /><span></span>
-              </div>
+          <label for="mail">E-mail</label>
+          <input type="email" name="mail" />
 
-            <label for="lname">last name</label>
-            <input type="text" name="lname" />
+          <label for="pass">Password</label>
+          <div class="error">
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" />
+            <input type="password" name="pass" required /><span></span>
+          </div>
 
-            <label for="pass_confirm">confirm Password</label>
-            <input type="password" name="pass_confirm" required />
-          </fieldset>
-          <button type="submit">create acoount</button>
-        </form>
-        <p>Already have an account? <a href="#">Log in</a></p>
-      </section>
-    </main>
-  </body>
+          <label for="lname">last name</label>
+          <input type="text" name="lname" />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" />
+
+          <label for="pass_confirm">confirm Password</label>
+          <input type="password" name="pass_confirm" required />
+        </fieldset>
+        <button type="submit">create acoount</button>
+      </form>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </section>
+  </main>
+</body>
+
 </html>
