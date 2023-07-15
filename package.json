@@ -12,8 +12,7 @@
   },
   "keywords": [
     "sign-up",
-    "sign",
-    "up",
+    "signup",
     "js",
     "html",
     "css",
@@ -23,12 +22,7 @@
     "odin",
     "project",
     "form",
-    "responsive",
     "design",
-    "mobile-first",
-    "dark-light",
-    "mode",
-    "animation",
     "showcase",
     "single",
     "page",
@@ -41,11 +35,6 @@
     "url": "https://github.com/i4pg/sign-up-form/issues"
   },
   "homepage": "https://github.com/i4pg/sign-up-form#readme",
-  "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
-    "@commitlint/config-conventional": "^17.6.6",
-    "husky": "^8.0.3"
-  },
   "dependencies": {
     "normalize.css": "^8.0.1",
     "the-new-css-reset": "^1.9.0"
