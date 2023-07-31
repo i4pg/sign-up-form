@@ -1,61 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Sign-up Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/the-new-css-reset/css/reset.css"
+    />
+    <link href="src/css/style.css" rel="stylesheet" />
+    <script src="src/js/password-match.js" defer></script>
+  </head>
 
-<head>
-  <title>Sign up form</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
-  <link href="css/style.css" rel="stylesheet" />
-</head>
-
-<body>
-  <aside>
-    <div>
-      <img src="pics/odin-lined.png" alt="logo" />
-      <p>ODIN</p>
-    </div>
-  </aside>
-  <main>
-    <section class="first">
-      <h2>
-        This is not a real online service! You know you need something like
-        this in your life to help you realize your deepest dreams.
-      </h2>
-      <h2>Sign up <i>now</i> to get started.</h2>
-      <h2>You <i>know</i> you want to.</h2>
-    </section>
-    <section class="second">
-      <form action="#">
-        <fieldset>
-          <legend>Let's to this!</legend>
-
-          <label for="fname">first name</label>
-          <input type="text" name="fname" />
-
-          <label for="mail">E-mail</label>
-          <input type="email" name="mail" />
-
-          <label for="pass">Password</label>
-          <div class="error">
-
-            <input type="password" name="pass" required /><span></span>
+  <body>
+    <header>
+      <div class="overlay">
+        <img src="src/pics/odin-lined.png" alt="odin logo" />
+        <h2>ODIN</h2>
+      </div>
+      <p>
+        Photo by
+        <a href="https://unsplash.com/@haliewestphoto" target="_blank"
+          >Halie West</a
+        >
+        on
+        <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank"
+          >Unsplash</a
+        >
+      </p>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <h4>
+            This is not a real online service! you know you need something like
+            this in your life to help you realize your deepest dreams.
+          </h4>
+          <p>Sign up <em>now</em> to get started.</p>
+          <br />
+          <h4>You <em>know</em> you want to.</h4>
+          <br />
+        </div>
+      </section>
+      <section>
+        <form action="#" method="get">
+          <fieldset>
+            <div class="container">
+              <legend>Let's do this!</legend>
+              <div class="form-field">
+                <div>
+                  <label
+                    for="first-name"
+                    data-help="¿Are you 11 from Stranger Things?"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    pattern="[a-zA-Z0-9]+"
+                    value=""
+                    maxlength="245"
+                    placeholder=" "
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="last-name"
+                    data-help="A girl has no name- Arya Stark"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    pattern="[a-zA-Z0-9]+"
+                    value=""
+                    placeholder=" "
+                    maxlength="245"
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder=" "
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"
+                    placeholder=" "
+                  />
+                </div>
+                <div class="password-container">
+                  <label id="password-label" for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                    placeholder=" "
+                    required
+                  />
+                  <p id="password-msg">* Passwords do not match</p>
+                </div>
+                <div>
+                  <label for="password-confirmation">Confirm Password</label>
+                  <input
+                    type="password"
+                    placeholder=" "
+                    id="password-confirmation"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="container">
+            <input type="submit" value="Create Account" />
+            <p>
+              Already have an account?
+              <a href="http://github.com/i4pg">Log in</a>
+            </p>
           </div>
-
-          <label for="lname">last name</label>
-          <input type="text" name="lname" />
-
-          <label for="phone">Phone Number</label>
-          <input type="tel" name="phone" />
-
-          <label for="pass_confirm">confirm Password</label>
-          <input type="password" name="pass_confirm" required />
-        </fieldset>
-        <button type="submit">create acoount</button>
-      </form>
-      <p>Already have an account? <a href="#">Log in</a></p>
-    </section>
-  </main>
-</body>
-
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
