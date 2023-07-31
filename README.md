@@ -1,6 +1,6 @@
 # Sign Up Form
 
-<!-- An online calculator with basic arithmetic operations built using HTML5, CSS3 and JS. It can be controlled by a mouse or by a keyboard. -->
+Simple Sign up Form using pure HTML and CSS
 
 ## Demo
 
@@ -8,24 +8,14 @@ You can try it online [here](https://i4pg.github.io/sign-up-form).
 
 ## Features
 
-<!-- *   All basic operations are supported Multiplication, Division, Subtraction, Addition & Modulo Division -->
-<!-- *   Support negative values -->
-<!-- *   Full Keyboard support including visual effects -->
-<!-- *   Options to clear/delete a single input -backspace- OR clear the whole display -reset operand- OR reset everyting. -->
-<!-- *   Option for toggling sound Effect -->
-<!-- *   Clean UI -->
-<!-- *   Responsive Mobile-First -->
-<!-- *   Dark/Light mode -->
+* Responsive Desktop Screen Design
+* Client-side instant validation using HTML, CSS and JS
 
 ## Showcase
 
-### Wireframe
-
-<!-- ![](./src/image/wireframe/Untitled-2023-06-07-1555.png) -->
-
 ### Screenshot
 
-<!-- ![](./src/image/ezgif.com-gif-maker.gif) -->
+![](./src/pics/screen_shot.png)
 
 ## Getting Started
 
@@ -44,10 +34,9 @@ Then open the `index.html` file in your web browser to start playing the game.
 ### To-do
 
 - [x] UI
-    - [x] Mobile-first 
-    - [x] Dark/Light mode
+    - [x] Desktop Screen responsive
     - [x] Cross-Browser
-    - [x] Form animation
+    - [x] Form validaiton instant feedback
 
 ## Contributing
 
